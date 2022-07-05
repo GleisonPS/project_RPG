@@ -1,5 +1,5 @@
 class goblin():
-    def __init__(self,raca="Goblin",NV=1,armadura=NULL,arma=NULL,ATK=2,DEF=0):
+    def __init__(self,raca="Goblin",NV=1,armadura=None,arma=None,ATK=2,DEF=0):
         self.__raca = raca
         self.__NV = NV
         self.__armadura =armadura
@@ -24,3 +24,15 @@ class goblin():
         self.__armadura = Arma
     def GetArma(self):
         return self.__arma
+
+    #Atk
+    def SetAtk(self,atk):
+        self.__ATK = atk
+    def GetAtk(self):
+        return self.__ATK
+    
+    #Def
+    def SetDef(self,Def):
+        self.__DEF = Def
+    def GetDef(self):
+        return self.__DEF
